@@ -105,10 +105,10 @@ int main(int argc,char *argv[])
     if(stat("output", &st) != 0){
          mkdir("output", 0775);
     }
-    int num_node_x = 4;
-    int num_node_y = 100;
+    int num_node_x = 11;
+    int num_node_y = 11;
     int num_elem = (num_node_x - 1) * (num_node_x - 1) * (num_node_y - 1);
-    double voxel_d=0.1;
+    double voxel_d=0.5;
     vector<vector<double>> x(num_node_x * num_node_x * num_node_y, vector<double>(3));
     vector<vector<int>> element(num_elem);
     for (int i = 0; i < num_node_x; i++){
